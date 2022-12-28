@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="#">
+        <section class="help-section">
+          <h2>How can we help you?</h2>
+          <div>
+            <label for="username">Your Name</label>
+            <input type="text" name="user-name" id="username" required />
+          </div>
+          <div>
+            <label for="useremail">Your E-Mail address</label>
+            <input type="email" name="user-email" id="useremail" required />
+          </div>
+          <div>
+            <label for="userphone">Your Phone number</label>
+            <input
+              type="number"
+              name="user-phone-number"
+              id="userphone"
+              required
+            />
+          </div>
+          <div>
+            <label for="message">Your message</label>
+            <textarea name="user-message" id="message" rows="5"></textarea>
+          </div>
+          <div>
+            <label for="find-option">How did you find us?</label>
+            <select id="find-option">
+              <option value="web-search">Web Search</option>
+              <option value="you-tube">You tube</option>
+              <option value="friend-relative">Friends & Relatives</option>
+            </select>
+          </div>
+        </section>
+        <section class="reply-section">
+          <h2>How should we reply?</h2>
+          <div class="radio-container">
+            <input type="radio" name="reply" id="by-call" />
+            <label for="by-call">Call me</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="reply" id="by-email" />
+            <label for="by-email">Send me an email</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="reply" id="dont-reply" />
+            <label for="dont-reply">Don't reply</label>
+          </div>
+        </section>
+        <section class="term-section">
+          <div class="radio-container">
+            <input type="checkbox" name="term" id="agree" />
+            <label for="agree">Accept Terms</label>
+          </div>
+        </section>
+        <section class="button-section">
+          <div class="buttons-container">
+            <button type="reset">Clear</button>
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
